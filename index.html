@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-database.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="titleContainer">
+        <h1 class="title">Train Tracker</h1>
+        <h3 class="subTitle">Chugga Chugga Chugga Chugga Choo Choo</h3>
+    </div>
+    <div class="trainScheduleDisplay">
+        <h2 class="displayTitle">Current Train Schedule</h2>
+        <table class="trainScheduleData">
+            <tr class="tableDisplay">
+                <td>Train Name</td>
+                <td>Destination</td>
+                <td>Frequency (mins)</td>
+                <td>Next Arrival</td>
+                <td>Minutes Away</td>
+                <td>Remove</td>
+            </tr>
+        </table>
+    </div>
+    <form>
+        <div class="addTrainDisplay">
+            <div class="display2Title">Add Train</div>
+            <div class="input1">
+                <div class="input1Title">Train Name</div>
+                <input class="trainNameInput" type="text" placeholder="Enter Train Name">
+            </div>
+            <div class="input2">
+                <div class="input2Title">Destination</div>
+                <input class="destinationInput" type="text" placeholder="Enter Destination">
+            </div>
+            <div class="input3">
+                <div class="input3Title">First Train Time (HH:mm - Military Time)</div>
+                <input class="firstTrainTimeInput" type="text" placeholder="Enter First Train Time">
+            </div>
+            <div class="input4">
+                <div class="input4Title">Frequency (min)</div>
+                <input class="frequencyInput" type="text" placeholder="Enter Frequency">
+            </div>
+            <button class="submitBtn">Submit</button>
+        </div>
+    </form>
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
